@@ -1,0 +1,125 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%);
+background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+background-image: linear-gradient(to right, #eea2a2 0%, #bbc1bf 19%, #57c6e1 42%, #b49fda 79%, #7ac5d8 100%);
+background-image: linear-gradient(to top, #fcc5e4 0%, #fda34b 15%, #ff7882 35%, #c8699e 52%, #7046aa 71%, #0c1db8 87%, #020f75 100%); */
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	background: linear-gradient(140deg, rgb(39, 52, 128) 20%, rgb(153, 23, 110) 100%);
+}
+
+.logo {
+	display: inline-block;
+	position: absolute;
+	height: 80px;
+	top: 0;
+	padding-left: 60px;
+}
+
+.logo img {
+	position: relative;
+	top: 5px;
+}
+
+.menu {
+	display: inline-block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 80px;
+	padding-top: 25px;
+	padding-right: 60px;
+	box-sizing: border-box;
+}
+
+nav {
+	justify-content: center;
+}
+
+li {
+	display: inline-block;
+}
+
+li a {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+a {
+	text-decoration: none;
+	display: block;
+	width: 90px;
+	height: 30px;
+	margin-left: 12px;
+	background-color: rgba(177, 176, 176, 0.03);
+	border-radius: 4px;
+	color: #0ac88c;
+	transition: all .5s;
+}
+
+a:hover {
+	color: white;
+	background-color: rgba(177, 176, 176, 0.1);
+}
+
+a:target {
+	color: #ffb300;
+}
+
+main {
+	height: 100vh;
+	margin-top: 120px;
+	margin-bottom: 120px;
+}
+
+.circle {
+	height: 480px;
+	width: 480px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 40px;
+	background-color: rgba(236, 178, 16, 0.9);
+	border-collapse: collapse;
+	border-radius: 100%;
+	display: flex;
+	box-sizing: border-box;
+}
+
+.glasscontainer {
+	height: 520px;
+	width: 320px;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: rgba(177, 176, 176, 0.1);
+	border: 2px solid rgba(177, 176, 176, 0.15);
+	border-collapse: collapse;
+	border-radius: 12px;
+	position: relative;
+	top: -20px;
+	transform: rotate(-10deg);
+	backdrop-filter: blur(4px);
+	transition: all .5s;
+}
+
+.glasscontainer:hover {
+	transform: rotate(10deg);
+}
+
+.circuloglass {
+	height: 30px;
+	width: 30px;
+	border-radius: 100%;
+	background-color: transparent;
+	border-collapse: collapse;
+	border: 4px solid rgba(158, 175, 231, 0.5);
+	margin-top: 10px;
+	margin-left: 10px;
+	position: relative;
+}
